@@ -16,5 +16,12 @@ namespace SqlExcelExporter
         {
             InitializeComponent();
         }
+
+        private void ExportBtn_Click(object sender, EventArgs e)
+        {
+            Crypto crypto = new Crypto();
+            var name = crypto.DecryptCode("UDsM886D8EjbjmI19DyO7g==");
+            MessageBox.Show(name);
+        }
     }
 }
